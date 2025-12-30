@@ -247,6 +247,7 @@ export const usePuterStore = create<PuterStore>((set, get) => {
     }
   };
 
+  //simply check if puter exist then call theck checkauth funtion to set loading to false whether user logged in or not logged in
   const init = (): void => {
     const puter = getPuter();
     if (puter) {
