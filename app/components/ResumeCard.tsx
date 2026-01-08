@@ -18,7 +18,7 @@ const ResumeCard = ({resume:{id, companyName, jobTitle, feedback, imagePath}}:{r
     loadResume();
   },[imagePath]);
   return (
-    <Link to={'/resume/${resume.id}'} className='resume-card animate-in fade-in duration-1000'>
+    <Link to={`/resume/${id}`} className='resume-card animate-in fade-in duration-1000'>
         <div className='resume-card-header'>
             <div className='flex flex-col gap-2'>
             {companyName && <h2 className='text-black! font-bold wrap-break-word'>{companyName}</h2>}

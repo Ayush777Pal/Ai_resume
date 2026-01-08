@@ -18,8 +18,8 @@ const auth = () => {
 
   useEffect(() => {
     if (isLoading) return;
-    if (auth.isAuthenticated && next) {
-      navigate(next, { replace: true });
+    if (auth.isAuthenticated) {
+      navigate('/');
     }
   }, [auth.isAuthenticated, isLoading, next, navigate]);
   return (
